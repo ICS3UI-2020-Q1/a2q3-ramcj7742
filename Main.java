@@ -1,6 +1,8 @@
+import java.util.Scanner;
+
 /**
- *
- * @author 
+ * Sorts users number in ascending order
+ * @author Jaden Ramcharan
  */
 public class Main {
 
@@ -9,7 +11,23 @@ public class Main {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    // TODO code application logic here
+    // create scanner for user input
+    Scanner input = new Scanner(System.in);
+
+    //gets users first number
+    System.out.println("Please enter an integer:");
+    int a = input.nextInt();
+
+    //gets users second number
+    System.out.println("Please enter another integer:");
+    int b = input.nextInt();
+
+    // sorts numbers in ascending order
+    if (a >= b) {
+      System.out.println("Your numbers in ascending order are " + b + ", " + a);
+    } else {
+      System.out.println("Your numbers in ascending order are " + a + ", " + b);
+    }
     
   }
 }
